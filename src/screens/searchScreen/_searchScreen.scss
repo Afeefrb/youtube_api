@@ -1,0 +1,21 @@
+@import '../../_base.scss';
+
+@media(min-width:520px) {
+    .searchScreen{
+        width: 80vw !important;
+        margin-left: 100px !important;
+        margin-top: 100px !important;
+      
+        
+    }
+    }
+    
+    @media(min-width:800px) { //bigScreen (medium (800px) --->)
+        .searchScreen{
+            width: 80vw !important;
+            margin-left: 250px !important;
+            margin-top: 100px !important;
+          
+            
+        }
+    }

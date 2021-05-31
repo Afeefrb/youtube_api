@@ -1,0 +1,44 @@
+@import '../../_base.scss';
+
+.login {  
+
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+
+
+    &__container {
+        background-color: $black-secondary;
+        padding: 2rem;
+        margin: 0 1rem;
+        border-radius: 10px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        
+        img {
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+        }
+
+        button {
+            padding: 0 0.5rem;
+            margin: 1rem 0;
+            border:none;
+            border-radius: 2px;
+            background-color:rgba(255, 190, 190, 0.986);
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        p {
+            font-style: italic;
+        }
+    }
+}
