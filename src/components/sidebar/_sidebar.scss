@@ -1,6 +1,9 @@
 @import '../../_base.scss';
 
-
+.sidebar__icon{
+   margin-left: 35px;
+   margin-bottom: 20px;
+}
 
 .sidebar {
    background: $black-secondary;
@@ -57,12 +60,14 @@
 
    &.open {
       transform: translateX(0);
+    
    }
 }
 
 @media (max-width: $breakpoint-medium) {
    .sidebar {
       width: 90px;
+      height:100%;
       li {
          justify-content: center;
       }

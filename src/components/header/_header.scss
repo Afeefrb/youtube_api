@@ -108,6 +108,7 @@ z-index: 999;
 
 @media (max-width: $breakpoint-small) {
     .header {
+        width:100vw !important;
         padding: 1.5rem;
 
         form {

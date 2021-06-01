@@ -1,10 +1,16 @@
-@import '../../_base.scss';
+// @import '../../_base.scss';
 
-.watchScreen{
+// .watchScreen{
 
-    margin-left:250px;
-    margin-top: 100px;
+//     margin-left:250px;
+//     margin-top: 100px; 
 
+// }
+
+.watchScreen {
+    margin-top: 50px;
+    width:100% !important;
+    // background-color: red;
 }
 
 .watchScreen__player{
@@ -14,3 +20,21 @@
     background-color: #353946;
 
 }
+
+@media(min-width:520px) {
+    .watchScreen{
+        width: 80vw !important;
+        margin-left: 100px !important;
+      
+        
+    }
+    }
+    
+    @media(min-width:800px) { //bigScreen (medium (800px) --->)
+        .watchScreen{
+            width: 80vw !important;
+            margin-left: 250px !important;
+          
+            
+        }
+    }

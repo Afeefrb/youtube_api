@@ -10,6 +10,8 @@ import {
     MdHome,
     MdSentimentDissatisfied,
  } from 'react-icons/md'
+
+ import { AiFillCloseCircle } from "react-icons/ai";
 import { useDispatch, useSelector } from 'react-redux';
 import { logOut } from '../../redux/actions/auth.action';
 import { Link, useHistory } from 'react-router-dom';
@@ -30,6 +32,8 @@ const Sidebar = ({sidebar, handleToggleSidebar}) => {
     return (
         <nav  className={sidebar? "sidebar open" : "sidebar"} onClick={() => handleToggleSidebar(false)}>
            <Link to="/">
+
+              {sidebar && <AiFillCloseCircle className="sidebar__icon" size={23} />}
            
            <li>
                 <MdHome size={23} />
